@@ -1,0 +1,26 @@
+table{
+	width: 90%;
+	margin-left: 15px;
+}
+
+.choose{
+	padding: 10px;
+}
+#s_title{
+	width: 100%;
+}
+.srch-device{
+	position: absolute;
+}
+#form{  
+    width:100%;
+   
+} 
+.footer1{
+text-align: center;
+    margin: 20px 0;
+    font-size: 10px;
+    color: white;
+    background-color: #303642;
+    padding: 13px;
+    }

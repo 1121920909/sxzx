@@ -1,0 +1,172 @@
+/*
+ * 此文件为公共样式表
+ * @author 
+ * @date 2017/7/8
+ */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+body {
+  position: relative;
+  /*min-height: 860px;*/
+  min-width: 950px;
+  width: 100%;
+  margin: 0 auto;
+  font: 14px/20px arial, sans-serif, Microsoft Yahei;
+  background: #fcfcfc;
+}
+a {
+  text-decoration: none;
+  color: #555555;
+}
+a:hover {
+  cursor: pointer;
+}
+li {
+  list-style: none;
+}
+.clear {
+  clear: both;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  height: 1%;
+}
+.btn,
+input {
+  border: 0;
+}
+/*页面*/
+.web-container {
+  width: 75%;
+  margin: 0 auto;
+}
+.header {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+.header-top {
+  height: 125px;
+  background-image:url(../img/top.jpg);
+  background-size: cover;
+  
+  /*background-image: url(../img/index_top.jpg);*/
+  text-align: center;
+}
+.header-top h2 {
+    position: absolute;
+    top: 30px;
+    font-size: 39px;
+    left: 534px;
+}
+.header-tab {
+  height: 50px;
+  background-color: #303642;
+}
+.tab-left {
+  width: 100%;
+  height: 40px;
+  float: left;
+}
+.tab-left ul {
+  background-color: #696969;
+}
+.tab-left span {
+  float: right;
+  margin-right: 20px;
+  margin-top: 9px;
+  color: white;
+}
+.tab-box {
+  display: inline-block;
+  width: 90px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 16px;
+}
+.tab-box a {
+  color: white;
+}
+.tab-box:hover {
+  background-color: #424854;
+  cursor: pointer;
+}
+.tab-right {
+  margin: 8px 10px 0 0;
+  float: right;
+  width: 70px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 3px;
+  background-color: #424854;
+}
+/*底部*/
+.footer {
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    background-color: #303642;
+    padding: 13px;
+    width: 75%;
+    margin-left: 165px;
+    margin-top: 10px;
+}
+img {
+  float: left;
+  margin-left: 20px;
+  margin-top: 27px;
+  width: 322px;
+}
+.header-tab2 {
+  height: 50px;
+  border-bottom: 1px solid #BD1F26;
+}
+.tab-left2 {
+  width: 100%;
+  height: 40px;
+  float: left;
+
+}
+
+.tab-left2 span {
+  float: right;
+  margin-right: 20px;
+  margin-top: 9px;
+
+}
+.tab-box2 {
+  display: inline-block;
+  width: 110px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 18px;
+}
+.tab-box2 a {
+  color: black;
+}
+.first {
+    margin: 0 0 10px;
+    color: #BD1F26;
+}
+.footer00 {
+	    text-align: center;
+    font-size: 10px;
+    color: white;
+    background-color: #303642;
+    padding: 13px;
+    /* width: 75%; */
+    /* margin-left: 165px; */
+    margin-top: 10px;
+}
+

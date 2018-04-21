@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8" http-equiv="Content-Type"/>
+  <title>Title</title>
+  <link rel="stylesheet" href="../static/css/common1.css" th:href="@{/css/common1.css}">
+  <link rel="stylesheet" href="../static/css/index.css" th:href="@{/css/index.css}">
+  <link rel="stylesheet" href="../static/css/calendar.css" th:href="@{/css/calendar.css}">
+  <link rel="stylesheet" href="../static/css/swiper-3.4.2.min.css" th:href="@{/css/swiper-3.4.2.min.css}">
+  <script src="../static/js/jquery-2.0.0.min.js" th:src="@{/js/jquery-2.0.0.min.js}"></script>
+  <script src="../static/js/calendar_core.js" th:src="@{/js/calendar_core.js}"></script>
+  <script src="../static/js/swiper-3.4.2.jquery.min.js" th:src="@{/js/swiper-3.4.2.jquery.min.js}"></script>
+</head>
+<body>
+<div class="web-container">
+  <!--head-->
+  <div class="header">
+    <div class="header-top clearfix">
+      <img src="../static/img/hfut_03.png" th:src="@{/img/hfut_03.png}">
+      <h2>ERP实训中心</h2>
+    </div>
+    <!--TODO 替换href-->
+    <div class="header-tab">
+      <div id="tab-left clearfix">
+        <ul>
+          <li class="tab-box" >
+            <a href="/view/index">首页</a>
+          </li>
+          <li class="tab-box">
+            <a href="/view/index_intro">中心简介</a>
+          </li>
+          <li class="tab-box">
+            <a href="/view/index_rule">体制与管理</a>
+          </li>
+          <li class="tab-box">
+            <a href="/view/index_teach">实训教学</a>
+          </li>
+          <li class="tab-box">
+            <a href="/view/index_team">实训队伍</a>
+          </li>
+          <li class="tab-box">
+            <a href="/view/index_device">设备与环境</a>
+          </li>
+          <li class="tab-box tab-right">
+            <a href="/view/login"  target="_blank">登录</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+  <!--main-->
+  <div class="main clearfix">
+    <div class="main-one">
+      <!--news-->
+      <div class="news">
+        <!--swiper-->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide1" style="background-color:#219CEA;">Slide 1</div>
+            <div class="swiper-slide slide2" style="background-color:#6CCEFF">Slide 2</div>
+            <div class="swiper-slide slide3" style="background-color:#4FDD07;">Slide 3</div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <!--new main-->
+        <div class="news-main txt-list">
+          <div style="border-bottom: 1px solid #8b888e;">
+            <h2 style="display: inline-block;padding-left: 10px;color:#303642;">工大新闻</h2>
+            <a href="" style="padding-left: 217px;" >更多>></a>
+          </div>
+          <!--new List-->
+          <!--/*@thymesVar id="newList" type="java.util.List"*/-->
+          <!--/*@thymesVar id="news" type="com.hfut.erp.sxzx.domain.New"*/-->
+          <ul>
+            <div th:each="news:${newList}">
+              <!--TODO new title-->
+              <li style="display: inline-block;width:70%;overflow:hidden;text-overflow:ellipsis">
+                <a href="/view/index/detail/30" target="_blank" title=""
+                   th:text="${news.title}"
+                >
+                  合肥校区2017级本科生防震消防应急疏散演练暨成人宣誓仪式举行
+                </a>
+              </li>
+              <!--TODO new time-->
+              <li style="float:right;font-size:small;color:#a2a6a9;"
+                  th:text="${news.time}"
+              >
+                2017-09-06
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <div class="main-three">
+        <!--通知公告-->
+        <div class="info" style="width:600px">
+          <div class="info-main">
+            <div style="border-bottom: 1px solid #8b888e;">
+              <h2 style="display: inline-block;padding-left: 10px;color:#303642;">通知公告</h2>
+              <a href="" style="padding-left: 173px;" >更多>></a>
+            </div>
+            <ul>
+              <!--/*@thymesVar id="noticeList" type="java.util.List"*/-->
+              <div th:each="notice:${noticeList}">
+                <!--TODO notice title-->
+                <li style="display: inline-block;width:70%;overflow:hidden;text-overflow:ellipsis">
+                  <a href="/view/index/detail2/21" target="_blank" title=""
+                  th:text="${notice.title}"
+                  >
+                    关于合肥校区2017级研究生、本科生户口迁移、入学安全教育测试有关事项的通知
+                  </a>
+                </li>
+                <!--TODO notice time-->
+                <li style="float:right;font-size:small;color:#a2a6a9;"
+                    th:text="${notice.time}"
+                >
+                  2017-09-06
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <!--报告讲座-->
+        <div class="lect" style="width:600px">
+          <div class="lect-main">
+            <div style="border-bottom: 1px solid #8b888e;">
+              <h2 style="display: inline-block;padding-left: 10px;color:#303642;">报告讲座</h2>
+              <a href="" style="padding-left: 173px;" >更多>></a>
+            </div>
+            <ul>
+              <div th:each="chair:${chairList}">
+                <!--TODO chair title-->
+                <li style="display: inline-block;width:69%;overflow:hidden;text-overflow:ellipsis">
+                  <a href="/view/index/detail3/${chair.id}" target="_blank" title="" th:text="${chair.title}"></a></li>
+                </li>
+                <!--TODO chair time-->
+                <li style="float:right;font-size:small;color:#a2a6a9;" th:text="${chair.time}"></li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--日历-->
+    <div class="main-two">
+      <div class="cald">
+        <h2>日历</h2>
+        <div id="calendar" class="calendar"></div>
+      </div>
+      <div class="tel">
+        <div class="tel-main">
+          <h2>联系电话</h2>
+          <ul>
+            <li style="margin-top:5px;">办公室1：2020202020</li>
+            <li style="margin-top:5px;">办公室2：2020202020</li>
+            <li style="margin-top:5px;">办公室3：2020202020</li>
+            <li style="margin-top:5px;">办公室4：2020202020</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--footer-->
+  <div class="footer">
+    <span>合肥工业大学</span>
+  </div>
+</div>
+<script>
+    var mySwiper = new Swiper ('.swiper-container', {
+        autoplay: 3000,
+        loop: true,
+        // 如果需要分页器
+        pagination: '.swiper-pagination',
+    })
+</script>
+</body>
+</html>

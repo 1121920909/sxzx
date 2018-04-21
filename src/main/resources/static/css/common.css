@@ -1,0 +1,178 @@
+/*
+ * 此文件为公共样式表
+ * @author 
+ * @date 2017/7/8
+ */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+body {
+  position: relative;
+  /*min-height: 860px;*/
+  min-width: 950px;
+  width: 100%;
+  margin: 0 auto;
+  font: 14px/20px arial, sans-serif, Microsoft Yahei;
+  background: #fcfcfc;
+}
+a {
+  text-decoration: none;
+  color: #555555;
+}
+a:hover {
+  cursor: pointer;
+}
+li {
+  list-style: none;
+}
+.clear {
+  clear: both;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  height: 1%;
+}
+.btn,
+input {
+  border: 0;
+}
+/*页面*/
+.web-container {
+  width: 75%;
+  margin: 0 auto;
+}
+.header {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+.header-top {
+  height: 220px;
+  background-color: #229BEA;
+  color: white;
+  /*background-image: url(../img/index_top.jpg);*/
+  text-align: center;
+}
+.header-top h2 {
+    position: absolute;
+    top: 123px;
+    left: 452px;
+    font-size: 47px;
+}
+.header-tab {
+  height: 50px;
+  background-color: #303642;
+}
+.tab-left {
+  width: 100%;
+  height: 40px;
+  float: left;
+}
+.tab-left ul {
+  background-color: #696969;
+}
+.tab-left span {
+  float: right;
+  margin-right: 20px;
+  margin-top: 9px;
+  color: white;
+}
+.tab-box {
+  display: inline-block;
+  width: 90px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 16px;
+}
+.tab-box a {
+  color: white;
+}
+.tab-box:hover {
+  background-color: #424854;
+  cursor: pointer;
+}
+.tab-right {
+  margin: 8px 10px 0 0;
+  float: right;
+  width: 70px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 3px;
+  background-color: #424854;
+}
+/*底部*/
+.footer {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 10px;
+    color: white;
+    background-color: #303642;
+    padding: 13px;
+}
+
+/*新的公共样式*/
+.mana-header {
+  height: 100px;
+  background-color: rgb(247,247,247);
+}
+.mana-logo {
+  float: left;
+  width:50px;
+  margin: 25px 35px 0 100px;
+}
+.mana-header>h1 {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  margin: 30px 0 0 0;
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.nav-left {
+  padding: 5px 0 10px;
+	background-color: rgb(48,52,64);
+}
+.nav-left a {
+	color: rgb(158, 163, 171);
+}
+.nav-left>ul {    
+	background-color: rgb(48,52,64);
+    min-height: 553px;
+    margin: 10px 0;
+}
+.nav-left>ul>li>ul {
+  padding: 5px 25px;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+	color: #fff;
+	background-color: #d9534f;
+}
+.main {
+	width: 75%;
+}
+.logined {
+	float: right;
+	margin: 35px 60px 0 0;
+}
+.caret/* {
+	float: right;
+	height: 20px;
+	line-height: 20px;
+}*/
+
+.btn-logout {
+	background-color: #f7f7f7 improtant!;
+}

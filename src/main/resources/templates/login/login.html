@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>登录</title>
+  <link rel="stylesheet" href="../../static/css/bootstrap.min.css" th:href="@{/css/bootstrap.css}">
+  <link rel="stylesheet" href="../../static/css/login.css" th:href="@{/css/login.css}">
+  <link rel="stylesheet" href="../../static/css/common.css" th:href="@{/css/common.css}">
+  <script src="../../static/js/jquery-3.2.1.min.js" th:src="@{/js/jquery-3.2.1.min.js}"></script>
+  <script src="../../static/js/bootstrap.min.js" th:src="@{/js/bootstrap.min.js}"></script>
+</head>
+<body>
+<div class="subject container">
+  <img class="hfut" src="../../static/img/hfut_03.png" th:src="@{/img/hfut_03.png}">
+  <div id="login">
+    <form action="/login" method="post">
+      <div class="mycenter">
+        <div class="mysign">
+          <div class="col-lg-11 text-center text-info">
+            <h2>ERP实训中心</h2>
+          </div>
+          <label class="checkbox-inline">
+            <input type="radio" name="type" value=1>管理员
+          </label>
+          <label class="checkbox-inline">
+            <input type="radio" name="type" value=2>教师
+          </label>
+          <div class="col-lg-15">
+            <input name="username" type="text" class="form-control " placeholder="请输入账户名" required autofocus/>
+          </div>
+
+          <div class="col-lg-15">
+            <input name="password" type="password" class="form-control" placeholder="请输入密码" required autofocus/>
+          </div >
+          <div id="join" class="text-center">
+            <input type="submit" class="btn btn-info " value="登录">
+          </div>
+          <div id="forgot">
+            <p  class="text-center">
+              忘记密码？
+              <a href="#toregister">点击这里</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="footer2">
+  <span>合肥工业大学</span>
+</div>
+</body>
+</html>

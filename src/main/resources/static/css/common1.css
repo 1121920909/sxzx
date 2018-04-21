@@ -1,0 +1,151 @@
+/*
+ * 此文件为公共样式表
+ * @author 
+ * @date 2017/7/8
+ */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+body {
+  position: relative;
+  /*min-height: 860px;*/
+  min-width: 950px;
+  width: 100%;
+  margin: 0 auto;
+  font: 14px/20px arial, sans-serif, Microsoft Yahei;
+  background: #fcfcfc;
+}
+a {
+  text-decoration: none;
+  color: #555555;
+}
+a:hover {
+  cursor: pointer;
+}
+li {
+  list-style: none;
+}
+.clear {
+  clear: both;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  height: 1%;
+}
+.btn,
+input {
+  border: 0;
+}
+/*页面*/
+.web-container {
+  width: 75%;
+  margin: 0 auto;
+}
+.header {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+.header-top {
+  height: 220px;
+  background-image:url(../img/top.jpg);
+  background-size: cover;
+  
+  /*background-image: url(<%=basePath%>/img/index_top.jpg);*/
+  text-align: center;
+}
+.header-top h2 {
+    
+    position: absolute;
+    top: 127px;
+    left: 452px;
+    font-size: 47px;
+}
+.header-top h1 {
+    
+    position: absolute;
+    top: 91px;
+    left: 452px;
+    font-size: 47px;
+    font-weight: bold;
+}
+.header-tab {
+  height: 50px;
+  background-color: #303642;
+}
+.tab-left {
+  width: 100%;
+  height: 40px;
+  float: left;
+}
+.tab-left ul {
+  background-color: #696969;
+}
+.tab-left span {
+  float: right;
+  margin-right: 20px;
+  margin-top: 9px;
+  color: white;
+}
+.tab-box {
+  display: inline-block;
+  width: 90px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 16px;
+}
+.tab-box a {
+  color: white;
+}
+.tab-box:hover {
+  background-color: #424854;
+  cursor: pointer;
+}
+.tab-right {
+  margin: 8px 10px 0 0;
+  float: right;
+  width: 70px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 3px;
+  background-color: #424854;
+}
+/*底部*/
+.footer {
+  text-align: center;
+    margin: 20px 0;
+    font-size: 10px;
+    color: white;
+    background-color: #303642;
+    padding: 13px;
+
+}
+img{
+  float: left;
+  margin-left: 20px;
+  margin-top: 15px;
+  width: 360px;
+}
+.intro_lead{
+	color:black;
+}
+.intro{
+	
+}
+.header-tab2 {
+	text-align: center;
+    height: 57px;
+    border-bottom: 1px solid #BD1F26;
+    font-size: 27px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,49 @@
+.subject{
+	width: 75%;
+	height: 600px;
+	background-image: url(../img/back.jpg);
+	background-size:cover;
+}
+
+.hfut{
+	width: 300px
+}
+#login{
+	position: absolute;
+	top: 0px;
+	width: 450px;	
+	padding: 18px 6% 60px 6%;
+	margin-top: 130px;
+	margin-left: 256px;
+	background: white;
+	box-shadow:	
+		0pt 2px 5px rgba(105, 108, 109,  0.1),	
+		0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	border-radius: 5px;
+}
+
+.col-lg-15{
+	padding: 7px;
+
+}
+.checkbox-inline{
+	padding: 7px;
+};
+
+h2{
+	font-size: 18px;
+}
+#join{
+	padding: 7px;
+}
+.footer2{
+	    text-align: center;
+    /* margin: 20px 0; */
+    font-size: 10px;
+    color: white;
+    background-color: #303642;
+    padding: 13px;
+    width: 75%;
+    margin:auto;
+}
+

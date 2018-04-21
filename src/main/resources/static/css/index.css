@@ -1,0 +1,119 @@
+.main-one {
+  display: inline-block;
+  width: 73%;
+}
+.main-two {
+  display: inline-block;
+  width: 25%;
+  float: right;
+}
+.main-three {
+  display: -webkit-box;
+  /*margin-right: 10px;*/
+}
+.news,
+.info,
+.lect,
+.tel,
+.cald {
+  /*border: 1px solid black;*/
+  /*width: 100px;*/
+  height: 250px;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #EDF8FE;
+  border-radius: 5px;
+}
+.txt-list {
+  width: 53%;
+  overflow: hidden;
+  /*自动隐藏文字*/
+  text-overflow: ellipsis;
+  /*文字隐藏后添加省略号*/
+  white-space: nowrap;
+  padding: 0px 10px 10px 10px;
+  /*margin-left: 10px;*/
+  border-bottom: 1px dotted #d7d7d7;
+  list-style: square;
+}
+.txt-list ul {
+  margin: 10px 20px 10px 10px;
+}
+.txt-list ul li {
+  height: 25px;
+  line-height: 25px;
+}
+.info-main,
+.lect-main {
+  width: 95%;
+  overflow: hidden;
+  /*自动隐藏文字*/
+  text-overflow: ellipsis;
+  /*文字隐藏后添加省略号*/
+  white-space: nowrap;
+  padding: 0px 10px 10px 10px;
+  /*margin-left: 10px;*/
+  border-bottom: 1px dotted #d7d7d7;
+  list-style: square;
+}
+.info-main h2,
+.lect-main h2 {
+  height: 30px;
+  line-height: 30px;
+}
+.info-main li,
+.lect-main li {
+  padding-left: 10px;
+  height: 25px;
+  line-height: 25px;
+}
+/*新闻大板块*/
+.news {
+  /*-webkit-box-flex:3;*/
+  margin-left: 0px;
+  padding: 10px;
+}
+/*工大新闻文字列表*/
+.news-main {
+  padding-left: 30px;
+}
+/*日历*/
+.cald {
+  /*-webkit-box-flex:1;*/
+  margin-right: 0px;
+}
+.calendar {
+  margin-top: 10px;
+}
+/*通知公告*/
+.info {
+  margin-right: 25px;
+  -webkit-box-flex: 1;
+}
+/*报告讲座*/
+.lect {
+  -webkit-box-flex: 1;
+  /*margin-right: 0;*/
+}
+/*联系电话*/
+.tel {
+  margin-right: 0;
+  -webkit-box-flex: 1;
+}
+.tel-main > ul {
+    height: 200px;
+    margin-top: 10px;
+}
+/*新闻图轮播*/
+.swiper-container {
+  float: left;
+  height: 240px;
+  width: 40%;
+  border: 2px solid #333333;
+}
+#title{
+  position:absolute;
+  top: 20px;
+  left: 200px; 
+}
+	
