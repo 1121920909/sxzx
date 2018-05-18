@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8" http-equiv="Content-Type"/>
+  <title>ERP实训中心</title>
+  <link rel="stylesheet" th:href="@{/css/common1.css}" href="../../../static/css/common1.css">
+  <link rel="stylesheet" href="../../../static/css/index.css" th:href="@{/css/index.css}">
+  <link rel="stylesheet" href="../../../static/css/intro.css" th:href="@{/css/intro.css}">
+  <link rel="stylesheet" href="../../../static/css/calendar.css" th:href="@{/css/calendar.css}">
+  <link rel="stylesheet" href="../../../static/css/swiper-3.4.2.min.css" th:href="@{/css/swiper-3.4.2.min.css}">
+  <link rel="stylesheet" href="../../../static/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}">
+  <script src="../../../static/js/bootstrap.min.js" th:src="@{/js/bootstrap.min.js}"></script>
+  <script src="../../../static/js/jquery-2.0.0.min.js" th:src="@{/js/jquery-2.0.0.min.js}"></script>
+  <script src="../../../static/js/calendar_core.js" th:src="@{/js/calendar_core.js}"></script>
+  <script src="../../../static/js/swiper-3.4.2.jquery.min.js" th:src="@{/js/swiper-3.4.2.jquery.min.js}"></script>
+</head>
+<body>
+<div class="web-container">
+  <div class="header">
+    <div class="header-top clearfix">
+      <img src="../../../static/img/hfut_03.png" th:src="@{/img/hfut_03.png}">
+      <h1>ERP实训中心</h1>
+    </div>
+    <div class="header-tab">
+      <div id="tab-left clearfix">
+        <ul>
+          <li class="tab-box"><a href="/index">首页</a></li>
+          <li class="tab-box"><a href="/index/intro">中心简介</a></li>
+          <li class="tab-box"><a href="/index/rule">体制与管理</a></li>
+          <li class="tab-box"><a href="/index/teach">实训教学</a></li>
+          <li class="tab-box"><a href="/index/team">实训队伍</a></li>
+          <li class="tab-box"><a href="/index/device">设备与环境</a></li>
+
+          <li class="tab-box tab-right">
+            <a href="/view/login" target="_blank">登录</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+  <div class="main clearfix">
+    <div class="left">
+      <ul>
+
+        <p>体制与管理</p>
+
+        <li>
+          <a href="/index/rule">管理体制</a>
+        </li>
+        <li>
+          <a href="/index/rule/plat">信息平台</a>
+        </li>
+        <li>
+          <a href="/index/rule/run">运行机制</a>
+        </li>
+      </ul>
+    </div>
+    <div class="right">
+      <h1>管理体制</h1>
+      <div class="intro">
+        <p>
+          ERP 综合实训中心隶属于管理学院，实行校、院二级管理。实验教学任务由学院教
+          学办直接下达，实验设备的购置、日常运行费等由学校教务处管理和划拨。实验中心的
+          实验室工作人员统一调配，经费统一管理，耗材物品统一购置，仪器设备（按分块）统
+          一使用，实验场地（按区域划分）统一安排。实验室工作人员既有分工，又有合作，使
+          各种教学资源得到了最大限度地发挥。
+        </p>
+
+      </div>
+
+    </div>
+  </div>
+  <div class="footer">
+    <span>合肥工业大学</span>
+  </div>
+</div>
+<script type="text/javascript" src="js/calendar_core.js"></script>
+<script type="text/javascript" src="js/swiper-3.4.2.jquery.min.js"></script>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        autoplay: 3000,
+        loop: true,
+
+        // 如果需要分页器
+        pagination: '.swiper-pagination',
+    })
+</script>
+</body>
+</html>

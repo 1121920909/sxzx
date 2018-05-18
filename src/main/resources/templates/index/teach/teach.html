@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8" http-equiv="Content-Type"/>
+  <title>ERP实训中心</title>
+  <link rel="stylesheet" th:href="@{/css/common1.css}" href="../../../static/css/common1.css">
+  <link rel="stylesheet" href="../../../static/css/index.css" th:href="@{/css/index.css}">
+  <link rel="stylesheet" href="../../../static/css/intro.css" th:href="@{/css/intro.css}">
+  <link rel="stylesheet" href="../../../static/css/calendar.css" th:href="@{/css/calendar.css}">
+  <link rel="stylesheet" href="../../../static/css/swiper-3.4.2.min.css" th:href="@{/css/swiper-3.4.2.min.css}">
+  <link rel="stylesheet" href="../../../static/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}">
+  <script src="../../../static/js/bootstrap.min.js" th:src="@{/js/bootstrap.min.js}"></script>
+  <script src="../../../static/js/jquery-2.0.0.min.js" th:src="@{/js/jquery-2.0.0.min.js}"></script>
+  <script src="../../../static/js/calendar_core.js" th:src="@{/js/calendar_core.js}"></script>
+  <script src="../../../static/js/swiper-3.4.2.jquery.min.js" th:src="@{/js/swiper-3.4.2.jquery.min.js}"></script>
+</head>
+<body>
+<div class="web-container">
+  <div class="header">
+    <div class="header-top clearfix">
+      <img src="../../../static/img/hfut_03.png" th:src="@{/img/hfut_03.png}">
+      <h1>ERP实训中心</h1>
+    </div>
+    <div class="header-tab">
+      <div id="tab-left clearfix">
+        <ul>
+          <li class="tab-box"><a href="/index">首页</a></li>
+          <li class="tab-box"><a href="/index/intro">中心简介</a></li>
+          <li class="tab-box"><a href="/index/rule">体制与管理</a></li>
+          <li class="tab-box"><a href="/index/teach">实训教学</a></li>
+          <li class="tab-box"><a href="/index/team">实训队伍</a></li>
+          <li class="tab-box"><a href="/index/device">设备与环境</a></li>
+
+          <li class="tab-box tab-right">
+            <a href="/view/login" target="_blank">登录</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+  <div class="main clearfix">
+    <div class="left">
+      <ul>
+
+        <p>实训教学</p>
+
+        <li><a href="/index/teach">教学理念</a></li>
+        <li><a href="/index/teach/sys">教学体系</a></li>
+        <li><a href="/index/teach/way">教学方法</a></li>
+        <li><a href="/index/teach/book">相关教材</a></li>
+      </ul>
+    </div>
+    <div class="right">
+      <h1>教学理念</h1>
+      <div class="intro">
+        <p>
+          经济全球化和一体化的快速推进，对管理人才提出了更高的要求，新型管理人才
+          不仅需要具备坚实的理论基础和合理的知识结构，还需要具备发现、分析和解决实践
+          中各种错综复杂问题的能力，特别需要具备创新能力。
+          为加强管理类专业学生的实践能力和创新能力培养，ERP 综合实训中心牢牢树立
+          “以学生为本、知识传授、能力培养和素质提高协调发展”的教育理念，坚持“以能
+          力培养为核心”的实验教学观念。从根本上改变实验教学依附于理论教学的传统观念，
+          充分发挥实验教学在学校人才培养和教学工作中的地位，形成理论教学与实验教学统
+          筹协调的理念和氛围。
+          遵循管理类专业培养目标和学科特点，将企业经营模拟和仿真环境与理论知识相
+          结合，ERP 综合实训中心促进学生知识-能力-素质的全面发展，突出能力培养，实现实
+          验教学与理论教学、实验教学与学生职业素养、实验教学与创业能力培养的有机结合。
+        </p>
+        <p>
+          按照学校创新型人才的培养目标，ERP 综合实训中心注重改革传统实验教学的内容
+          和模式，建立相对独立的、多样化的实验教学体系，注重学生多学科、多领域、跨专
+          业之间的知识交叉和融合。通过体验实际的企业运营和决策，培养学生的企业家精神和团队合作能力，并激发学生探求未知的热情和进一步深入学习理论知识的积极性。
+          中心的定位为：
+          （1）课程实验中心。基于四大平台开展与管理类专业相关的各类课程实验，使学
+          生掌握所学专业的基本理论和基本技能。
+          （2）校内实习中心。通过 ERP 的物料供应链管理和生产运作管理实训平台、网络
+          会计模拟实训平台等专业综合训练平台开展综合实验，提高学生专业知识的融合能力
+          和综合运用能力。
+          （3）创业模拟中心。通过企业经营决策仿真平台开展创业模拟，培养学生的经营
+          决策能力和创业管理能力。
+          （4）科研创新中心。通过 ERP 软件平台中的 BOS 系统和商务智能模块，进行软件
+          的流程定制、二次开发和数据的商务分析，培养学生的科研创新能力。
+        </p>
+
+      </div>
+
+    </div>
+  </div>
+  <div class="footer">
+    <span>合肥工业大学</span>
+  </div>
+</div>
+<script type="text/javascript" src="js/calendar_core.js"></script>
+<script type="text/javascript" src="js/swiper-3.4.2.jquery.min.js"></script>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        autoplay: 3000,
+        loop: true,
+
+        // 如果需要分页器
+        pagination: '.swiper-pagination',
+    })
+</script>
+</body>
+</html>

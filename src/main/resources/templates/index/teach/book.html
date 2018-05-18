@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8" http-equiv="Content-Type"/>
+  <title>ERP实训中心</title>
+  <link rel="stylesheet" th:href="@{/css/common1.css}" href="../../../static/css/common1.css">
+  <link rel="stylesheet" href="../../../static/css/index.css" th:href="@{/css/index.css}">
+  <link rel="stylesheet" href="../../../static/css/intro.css" th:href="@{/css/intro.css}">
+  <link rel="stylesheet" href="../../../static/css/calendar.css" th:href="@{/css/calendar.css}">
+  <link rel="stylesheet" href="../../../static/css/swiper-3.4.2.min.css" th:href="@{/css/swiper-3.4.2.min.css}">
+  <link rel="stylesheet" href="../../../static/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}">
+  <script src="../../../static/js/bootstrap.min.js" th:src="@{/js/bootstrap.min.js}"></script>
+  <script src="../../../static/js/jquery-2.0.0.min.js" th:src="@{/js/jquery-2.0.0.min.js}"></script>
+  <script src="../../../static/js/calendar_core.js" th:src="@{/js/calendar_core.js}"></script>
+  <script src="../../../static/js/swiper-3.4.2.jquery.min.js" th:src="@{/js/swiper-3.4.2.jquery.min.js}"></script>
+</head>
+<body>
+<div class="web-container">
+  <div class="header">
+    <div class="header-top clearfix">
+      <img src="../../../static/img/hfut_03.png" th:src="@{/img/hfut_03.png}">
+      <h1>ERP实训中心</h1>
+    </div>
+    <div class="header-tab">
+      <div id="tab-left clearfix">
+        <!--TODO 修改href-->
+        <ul>
+          <li class="tab-box"><a href="/index">首页</a></li>
+          <li class="tab-box"><a href="/index/intro">中心简介</a></li>
+          <li class="tab-box"><a href="/index/rule">体制与管理</a></li>
+          <li class="tab-box"><a href="/index/teach">实训教学</a></li>
+          <li class="tab-box"><a href="/index/team">实训队伍</a></li>
+          <li class="tab-box"><a href="/index/device">设备与环境</a></li>
+
+          <li class="tab-box tab-right">
+            <a href="/view/login" target="_blank">登录</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="main clearfix">
+    <div class="left">
+      <ul>
+        <p>实训教学</p>
+        <!--TODO 修改href-->
+        <li><a href="/index/teach">教学理念</a></li>
+        <li><a href="/index/teach/sys">教学体系</a></li>
+        <li><a href="/index/teach/way">教学方法</a></li>
+        <li><a href="/index/teach/book">相关教材</a></li>
+      </ul>
+    </div>
+    <div class="right">
+      <h1>相关教材</h1>
+      <div class="intro">
+        <p>
+          中心成员近五年出版教材和自编讲义情况如下：
+        </p>
+        <p>
+          1.李兴国，普通高等教育十一五(十五、十二五)国家级规划教材《信息管理学》（第三版），高等教育出版社出版，2011
+        </p>
+        <p>
+          2.李兴国，《管理信息系统》，东北财经大学出版社，2011
+        </p>
+        <p>
+          3.李兴国，《区域知识资本指数发展报告》，合肥工业大学出版社，2014
+        </p>
+        <p>
+          4.余本功，《电力数据预测理论与方法应用》，科学出版社,2016
+        </p>
+        <p>
+          5.余本功，普通高等教育“十一五”国家级规划教材《信息系统分析、设计与开发方法》，清华大学出版社，2013
+        </p>
+        <p>
+          6.姚禄仕，高等教育出版社，国家“九五”、“十五”、“十一五”规划教材《企业会计学》（第四版），2015
+        </p>
+        <p>
+          7.姚禄仕，《上市公司可持续发展问题研究》，中国经济出版社，2014
+        </p>
+        <p>
+          8.何建民，普通高等教育“十一五、十二五”国家级规划教材《电子商务概论》，高等教育出版社，2014
+        </p>
+        <p>
+          9.傅为忠，“十二五”普通高等教育本科国家级规划教材、高等学校管理类专业基础课程教材《企业管理学》（第三版），高等教育出版社，2015
+        </p>
+        <p>10.陆文星，“十一五”国家规划教材《信息系统分析与开发技术》，电子工业出版社，2010
+        </p>
+        <p>
+          11.陆文星，“十二五”国家规划教材《信息系统分析与开发技术（第二版）》，电子工业出版社，2015
+        </p>
+        <p>
+          12.杨颖，《管理信息系统案例》，清华大学出版社，2010
+        </p>
+        <p>
+          13.杨颖，《信息管理学（第三版）》，高等教育出版社，2012
+        </p>
+        <p>
+          14.杨颖，《管理信息系统》，东北财经大学出版社，2010
+        </p>
+        <p>
+          15.杨颖，ERP 实习指导书，自编讲义
+        </p>
+      </div>
+
+    </div>
+  </div>
+  <div class="footer">
+    <span>合肥工业大学</span>
+  </div>
+</div>
+</body>
+</html>

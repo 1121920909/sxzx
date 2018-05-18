@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8" http-equiv="Content-Type"/>
+  <title>ERP实训中心</title>
+  <link rel="stylesheet" th:href="@{/css/common1.css}" href="../../../static/css/common1.css">
+  <link rel="stylesheet" href="../../../static/css/index.css" th:href="@{/css/index.css}">
+  <link rel="stylesheet" href="../../../static/css/intro.css" th:href="@{/css/intro.css}">
+  <link rel="stylesheet" href="../../../static/css/calendar.css" th:href="@{/css/calendar.css}">
+  <link rel="stylesheet" href="../../../static/css/swiper-3.4.2.min.css" th:href="@{/css/swiper-3.4.2.min.css}">
+  <link rel="stylesheet" href="../../../static/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}">
+  <script src="../../../static/js/bootstrap.min.js" th:src="@{/js/bootstrap.min.js}"></script>
+  <script src="../../../static/js/jquery-2.0.0.min.js" th:src="@{/js/jquery-2.0.0.min.js}"></script>
+  <script src="../../../static/js/calendar_core.js" th:src="@{/js/calendar_core.js}"></script>
+  <script src="../../../static/js/swiper-3.4.2.jquery.min.js" th:src="@{/js/swiper-3.4.2.jquery.min.js}"></script>
+</head>
+<body>
+<div class="web-container">
+  <div class="header">
+    <div class="header-top clearfix">
+      <img src="../../../static/img/hfut_03.png" th:src="@{/img/hfut_03.png}">
+      <h1>ERP实训中心</h1>
+    </div>
+    <div class="header-tab">
+      <div id="tab-left clearfix">
+        <ul>
+          <li class="tab-box" >
+            <a href="/index">首页</a>
+          </li>
+          <li class="tab-box">
+            <a href="/index/intro">中心简介</a>
+          </li>
+          <li class="tab-box">
+            <a href="/index/rule">体制与管理</a>
+          </li>
+          <li class="tab-box">
+            <a href="/index/teach">实训教学</a>
+          </li>
+          <li class="tab-box">
+            <a href="/index/team">实训队伍</a>
+          </li>
+          <li class="tab-box">
+            <a href="/index/device">设备与环境</a>
+          </li>
+
+          <li class="tab-box tab-right">
+            <a href="/view/login"  target="_blank">登录</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+  <div class="main clearfix">
+    <div class="left">
+      <ul>
+
+        <p>设备与环境</p>
+
+        <li>
+          <a href="/index/device">设备环境</a>
+        </li>
+
+
+      </ul>
+    </div>
+    <div class="right">
+      <h1>设备情况</h1>
+      <div class="intro">
+        <p>
+          经过多年的建设，目前实验教学中心拥有固定资产总值 300 余万元。近五年来中心
+          的软件更新率达到 75%以上，完好率达到 90%。这些软件平台主要用于本科实验教学、
+          学生的科技创新活动和开放服务，利用率达到 100%。仪器设备和软件平台有：ERP物理沙盘、ERP电子沙盘、ERP软件U8、PC服务器、金蝶 K/3、EAS、BOS 套件、HP 服务器 DL580G5、
+          HP 服务器 DL380G6、HP YX6600 小型机、商务智能系统 SAP-BO、SAP B1 ERP、智能化财务分析系统软件、客户关系管理实践教学软件、物流系统仿真软件、现代企业经营决策仿真
+          系统软件、实用人力资源测试系统软件等。
+        </p>
+        <p>
+          并且，设备维护状况良好。实验中心制定有《实验教学仪器管理办法》，用于实验教学仪器的管理。计算机设
+          备三年内厂家免费维保，三年后学院有专门经费维护保障。各软件平台的使用状况和日
+          常维护由负责该平台所在的实验项目指导教师负责。一般仪器故障由实验室技术人员负
+          责维修，大型仪器设备故障报请实验中心，由学校教务处设备管理科负责联系厂家进行
+          维修。
+        </p>
+        <p>
+          实验室建有完善的环保和安全制度。实验室设有通风橱，专门用于强挥发性实验试 剂的配置。良好的环境通风设备（中央通风系统）可保证实验室的空气质量满足国家实 验室的相关技术标准。
+        </p>
+
+
+      </div>
+
+    </div>
+  </div>
+  <div class="footer">
+    <span>合肥工业大学</span>
+  </div>
+</div>
+<script type="text/javascript" src="js/calendar_core.js"></script>
+<script type="text/javascript" src="js/swiper-3.4.2.jquery.min.js"></script>
+<script>
+    var mySwiper = new Swiper ('.swiper-container', {
+        autoplay: 3000,
+        loop: true,
+
+        // 如果需要分页器
+        pagination: '.swiper-pagination',
+    })
+</script>
+</body>
+</html>

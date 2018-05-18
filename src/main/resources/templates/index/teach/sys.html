@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8" http-equiv="Content-Type"/>
+  <title>ERP实训中心</title>
+  <link rel="stylesheet" th:href="@{/css/common1.css}" href="../../../static/css/common1.css">
+  <link rel="stylesheet" href="../../../static/css/index.css" th:href="@{/css/index.css}">
+  <link rel="stylesheet" href="../../../static/css/intro.css" th:href="@{/css/intro.css}">
+  <link rel="stylesheet" href="../../../static/css/calendar.css" th:href="@{/css/calendar.css}">
+  <link rel="stylesheet" href="../../../static/css/swiper-3.4.2.min.css" th:href="@{/css/swiper-3.4.2.min.css}">
+  <link rel="stylesheet" href="../../../static/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}">
+  <script src="../../../static/js/bootstrap.min.js" th:src="@{/js/bootstrap.min.js}"></script>
+  <script src="../../../static/js/jquery-2.0.0.min.js" th:src="@{/js/jquery-2.0.0.min.js}"></script>
+  <script src="../../../static/js/calendar_core.js" th:src="@{/js/calendar_core.js}"></script>
+  <script src="../../../static/js/swiper-3.4.2.jquery.min.js" th:src="@{/js/swiper-3.4.2.jquery.min.js}"></script>
+</head>
+<body>
+<div class="web-container">
+  <div class="header">
+    <div class="header-top clearfix">
+      <img src="../../../static/img/hfut_03.png" th:src="@{/img/hfut_03.png}">
+      <h1>ERP实训中心</h1>
+    </div>
+    <div class="header-tab">
+      <div id="tab-left clearfix">
+        <ul>
+          <li class="tab-box"><a href="/index">首页</a></li>
+          <li class="tab-box"><a href="/index/intro">中心简介</a></li>
+          <li class="tab-box"><a href="/index/rule">体制与管理</a></li>
+          <li class="tab-box"><a href="/index/teach">实训教学</a></li>
+          <li class="tab-box"><a href="/index/team">实训队伍</a></li>
+          <li class="tab-box"><a href="/index/device">设备与环境</a></li>
+
+          <li class="tab-box tab-right">
+            <a href="/view/login" target="_blank">登录</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+  <div class="main clearfix">
+    <div class="left">
+      <ul>
+
+        <p>实训教学</p>
+
+        <li><a href="/index/teach">教学理念</a></li>
+        <li><a href="/index/teach/sys">教学体系</a></li>
+        <li><a href="/index/teach/way">教学方法</a></li>
+        <li><a href="/index/teach/book">相关教材</a></li>
+      </ul>
+    </div>
+    <div class="right">
+      <h1>教学体系</h1>
+      <div class="intro">
+        <p>
+          围绕管理类专业的人才培养目标和学生的认知学习规律，统筹考虑本科四年的理
+          论教学内容，从学生入学一直贯穿到毕业离校，基于建构理论分阶段分层次设计 ERP
+          实验实训的教学体系。包括 ERP 物流与供应链管理、ERP 生产与运作管理、网络会计模
+          拟、企业经营决策模拟等四个部分。通过组织一系列的教学实践活动, 使学生置身于
+          企业的经营环境中, 以企业日常运营的典型工作任务安排实践内容, 激发学生的学习
+          热情, 培养学生的综合应用与实践能力。
+        </p>
+        <p>
+          ERP 物流与供应链管理以企业进销存业务活动为对象，实现物流、资金流和信息流
+          的统一管理，主要包括采购管理、销售管理、库存管理和存货核算等内容。让学生了
+          解如何通过有效的供应链管理，控制和优化整个供应链的运作，从而提升企业竞争力。
+        </p>
+        <p>
+          ERP 生产与运作管理包含产品的 BOM 设计、主生产计划编制、物料需求计划编制、
+          JIT 生产等内容。学生从创立企业之初，就需要设计产品的基本结构组成和生产工艺路
+          线，掌握按订单生产和按库存生产等不同运营模式下生产管理的全过程。
+        </p>
+        <p>
+          网络会计模拟则拓展传统会计模拟实习至网络环境，以企业真实经营业务过程为
+          主线，包括企业在供应、生产、销售等整个生产经营过程中发生的各种经济业务，从
+          开设账户、设置账簿、经济业务发生时取得原始凭证、编制记账凭证、登记账簿、计
+          算产品成本、核算财务成果、进行利润分配到编制财务报表，完成一个会计核算工作
+          的循环过程。
+        </p>
+        <p>
+          企业经营决策模拟则一方面采用独特、直观的物理沙盘和教具, 模拟市场多变的
+          环境, 采用角色扮演、情景模拟和讲师点评的方式, 将企业运营管理中的各种业务过
+          程全部展示在模拟沙盘上, 使学生在虚拟的市场竞争环境中, 真实体会企业数年的经
+          营管理过程。另一方面通过电子沙盘经营模拟对抗，让学生进一步体验管理的复杂性
+          和竞争的激烈性, 使学生在充分理解 ERP 管理思想和沙盘实验的前提下, 完成从实践
+          到理论, 再由理论到实践的质的飞跃, 以比赛的形式进行更高层次的模拟经营。
+        </p>
+
+      </div>
+
+    </div>
+  </div>
+  <div class="footer">
+    <span>合肥工业大学</span>
+  </div>
+</div>
+<script type="text/javascript" src="js/calendar_core.js"></script>
+<script type="text/javascript" src="js/swiper-3.4.2.jquery.min.js"></script>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        autoplay: 3000,
+        loop: true,
+
+        // 如果需要分页器
+        pagination: '.swiper-pagination',
+    })
+</script>
+</body>
+</html>

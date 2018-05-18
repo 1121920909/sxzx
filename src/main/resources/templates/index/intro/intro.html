@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8" http-equiv="Content-Type"/>
+  <title>ERP实训中心</title>
+  <link rel="stylesheet" th:href="@{/css/common1.css}" href="../../../static/css/common1.css">
+  <link rel="stylesheet" href="../../../static/css/index.css" th:href="@{/css/index.css}">
+  <link rel="stylesheet" href="../../../static/css/intro.css" th:href="@{/css/intro.css}">
+  <link rel="stylesheet" href="../../../static/css/calendar.css" th:href="@{/css/calendar.css}">
+  <link rel="stylesheet" href="../../../static/css/swiper-3.4.2.min.css" th:href="@{/css/swiper-3.4.2.min.css}">
+  <link rel="stylesheet" href="../../../static/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}">
+  <script src="../../../static/js/bootstrap.min.js" th:src="@{/js/bootstrap.min.js}"></script>
+  <script src="../../../static/js/jquery-2.0.0.min.js" th:src="@{/js/jquery-2.0.0.min.js}"></script>
+  <script src="../../../static/js/calendar_core.js" th:src="@{/js/calendar_core.js}"></script>
+  <script src="../../../static/js/swiper-3.4.2.jquery.min.js" th:src="@{/js/swiper-3.4.2.jquery.min.js}"></script>
+</head>
+<body>
+<div class="web-container">
+  <div class="header">
+    <div class="header-top clearfix">
+      <img src="../../../static/img/hfut_03.png" th:src="@{/img/hfut_03.png}">
+      <h1>ERP实训中心</h1>
+    </div>
+    <div class="header-tab">
+      <div id="tab-left clearfix">
+        <ul>
+          <li class="tab-box" >
+            <a href="/index">首页</a>
+          </li>
+          <li class="tab-box">
+            <a href="/index/intro">中心简介</a>
+          </li>
+          <li class="tab-box">
+            <a href="/index/rule">体制与管理</a>
+          </li>
+          <li class="tab-box">
+            <a href="/index/teach">实训教学</a>
+          </li>
+          <li class="tab-box">
+            <a href="/index/team">实训队伍</a>
+          </li>
+          <li class="tab-box">
+            <a href="/index/device">设备与环境</a>
+          </li>
+
+          <li class="tab-box tab-right">
+            <a href="/view/login"  target="_blank">登录</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+  <div class="main clearfix">
+    <div class="left">
+      <ul>
+
+        <p>中心简介</p>
+
+        <li>
+          <a href="/index/intro">中心简介</a>
+        </li>
+
+      </ul>
+    </div>
+    <div class="right">
+      <h1>中心概况</h1>
+      <div class="intro">
+        <p>
+          ERP（企业资源计划）实验实训中心位于合肥工业大学管理学院四楼，使用面积约 300 平方米，软硬件设备总值 300 多万元。2005 年，为了进一步加强学生综合实践能力，推动管理类专业学生的实验教学建设，学院在原有管理学专业实验室的基础上，开始筹建 ERP 综合实训中心。
+        </p>
+        <p>
+          2006 年以来，学院已为 ERP 综合实训中心的建设分期投入 300 多万元，购
+          置了 250 多台计算机硬件、多种管理软件和企业经营决策模拟软件，选拔了一
+          批具有现代教学理念和创新精神、经验丰富、教学科研能力强的人员组建实验
+          教学管理队伍。经过十多年的建设，中心目前主要承担了管理学院信息管理与
+          信息系统专业、电子商务专业、工商管理专业和会计专业等四个专业的实验教
+          学任务，支持开设的实验课程有 ERP、ERP 实习、ERP 沙盘模拟、会计模拟实习
+          等 45 门，开设实验项目 95 项。同时承接部分专业的学年实习和毕业论文中的
+          实践内容，另外还完成了学生第二课堂的管理学科实践活动和各项竞赛活动。
+        </p>
+        <p>
+          ERP 综合实训中心突出实验教学改革和学生动手能力培养，取得了良好的
+          效果。近五年来，在国内管理类专业的专项学科竞赛中，获得省级奖 2 项；中
+          心的成员老师分别获得国家和省级教学成果奖及其他省部级奖 17 项、发表论文
+          35 篇。主持国家自然基金项目或教研项目 35 项、出版教材 15 本、国家精品资
+          源共享课 1 门。
+        </p>
+      </div>
+
+    </div>
+  </div>
+  <div class="footer">
+    <span>合肥工业大学</span>
+  </div>
+</div>
+<script type="text/javascript" src="js/calendar_core.js"></script>
+<script type="text/javascript" src="js/swiper-3.4.2.jquery.min.js"></script>
+<script>
+    var mySwiper = new Swiper ('.swiper-container', {
+        autoplay: 3000,
+        loop: true,
+
+        // 如果需要分页器
+        pagination: '.swiper-pagination',
+    })
+</script>
+</body>
+</html>
