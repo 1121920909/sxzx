@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta http-equiv="Content-Type" content="text/html charset=UTF-8">
+  <title>ERP实训中心</title>
+  <link rel="stylesheet" type="text/css" href="../../static/css/common2.css" th:href="@{/css/common2.css}" ">
+  <link rel="stylesheet" type="text/css" href="../../static/css/mana.css" th:href="@{/css/mana.css}">
+  <link rel="stylesheet" type="text/css" href="../../static/css/index.css" th:href="@{/css/index.css}">
+  <link rel="stylesheet" type="text/css" href="../../static/css/calendar.css" th:href="@{/css/calendar.css}">
+  <link rel="stylesheet" type="text/css" href="../../static/css/swiper-3.4.2.min.css" th:href="@{/css/swiper-3.4.2.min.css}">
+  <link href="<%=basePath%>/css/bootstrap.min.css" rel="stylesheet">
+
+  <script src="<%=basePath%>/js/bootstrap.min.js"></script>
+</head>
+  <body>
+<div class="web-container">
+  <div class="header">
+    <div class="header-top clearfix">
+      <img src="../../static/img/hfut_03.png" th:href="@{/img/hfut_03.png}">
+      <h2 id="title2">ERP实训中心</h2>
+    </div>
+    <div class="header-tab">
+      <div id="tab-left clearfix">
+        <ul>
+          <!--TODO 修改href-->
+          <li class="tab-box" >
+            <a href="/view/teach_home">首页</a>
+          </li>
+          <li class="tab-box">
+            <a href="/view/teach_lab">实验室查询</a>
+          </li>
+          <li class="tab-box">
+            <a href="/view/teach_subscribe">实验室预约</a>
+          </li>
+          <li class="tab-box tab-right">
+            <a href="/view/login">退出</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </div>
+  <div class="header-tab2">
+    <div id="tab-left2 ">
+      <ul>
+        <li class="tab-box2" >
+          <p class="first">首页</p>
+        </li>
+        <li class="tab-box2">
+          <a href="#">个人信息</a>
+        </li>
+
+      </ul>
+
+
+    </div>
+  </div>
+
+
+  <div class="main clearfix">
+    <div class="comtainer home_body">
+      <div class="row">
+        <div class="col-md-4">
+          <p class="welcome">欢迎来到</p>
+          <p class="welcome">合肥工业大学</p>
+          <p class="welcome">ERP实训中心</p>
+
+        </div>
+        <div class="col-md-8">
+          <!--TODO 修改为thymeleaf-->
+          <!--<h3>个人信息</h3>
+          <p>姓名：${loginuser.name}</p>
+          <p>性别：<c:if test="${loginuser.sex==1}">男</c:if>
+            <c:if test="${loginuser.sex==2}">女</c:if>
+          </p>
+          <p>用户类型：<c:if test="${loginuser.type==1}">管理员</c:if>
+            <c:if test="${lloginuser.type==2}">教师</c:if></p>-->
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <div class="footer1">
+    <span>合肥工业大学</span>
+  </div>
+</div>
+<script type="text/javascript" src="js/calendar_core.js"></script>
+<script type="text/javascript" src="js/swiper-3.4.2.jquery.min.js"></script>
+<script>
+    var mySwiper = new Swiper ('.swiper-container', {
+        autoplay: 3000,
+        loop: true,
+
+        // 如果需要分页器
+        pagination: '.swiper-pagination',
+    })
+</script>
+</body>
+</html>
